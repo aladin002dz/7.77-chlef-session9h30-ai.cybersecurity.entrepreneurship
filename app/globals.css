@@ -1,0 +1,418 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #05070d;
+  --bg-soft: #0b1120;
+  --fg: #f4f6fb;
+  --fg-muted: #a6afc4;
+  --accent: #22d3ee;
+  --accent-2: #a78bfa;
+  --border: rgba(255, 255, 255, 0.09);
+  --surface: rgba(255, 255, 255, 0.045);
+  --surface-strong: rgba(255, 255, 255, 0.09);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(60vmax 60vmax at 12% -10%, rgba(34, 211, 238, 0.16), transparent 60%),
+    radial-gradient(70vmax 70vmax at 110% 15%, rgba(167, 139, 250, 0.14), transparent 55%),
+    radial-gradient(50vmax 50vmax at 50% 120%, rgba(34, 211, 238, 0.10), transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+  background-size: 140% 140%, 140% 140%, 140% 140%, 100% 100%;
+  animation: drift 24s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  0% {
+    background-position: 0% 0%, 100% 0%, 50% 100%, 0 0;
+  }
+  100% {
+    background-position: 8% 12%, 92% 18%, 55% 88%, 0 0;
+  }
+}
+
+:lang(ar) {
+  font-family:
+    "Segoe UI", Tahoma, "Noto Naskh Arabic", "Geeza Pro", Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- Deck shell ---------- */
+
+.deck {
+  height: 100dvh;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.deck-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: clamp(10px, 2vw, 20px) clamp(14px, 3vw, 32px);
+  flex-wrap: nowrap;
+}
+
+.deck-kicker {
+  font-size: clamp(11px, 1.4vw, 13px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--fg-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.deck-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: var(--surface-strong);
+}
+
+.icon-btn:active {
+  transform: scale(0.94);
+}
+
+.fullscreen-btn {
+  display: inline-flex;
+}
+
+@media (max-width: 640px), (pointer: coarse) {
+  .fullscreen-btn {
+    display: none;
+  }
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.lang-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--fg-muted);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-pill:hover {
+  color: var(--fg);
+}
+
+.lang-pill-active {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #04101a;
+}
+
+/* ---------- Viewport / track ---------- */
+
+.deck-viewport {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  touch-action: pan-y;
+  /* Must be forced here too, not just on .deck-track: an RTL overflow
+     container anchors clipped content to its right edge, which would
+     show the LAST slide first even though the track's own transform
+     math assumes a left-anchored (LTR) origin. */
+  direction: ltr;
+}
+
+.deck-track {
+  display: flex;
+  direction: ltr;
+  height: 100%;
+}
+
+.slide {
+  flex-shrink: 0;
+  height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.slide-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: clamp(28px, 9vh, 84px) clamp(22px, 6vw, 64px) clamp(48px, 10vh, 96px);
+}
+
+.slide-kicker {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: clamp(12px, 1.6vw, 14px);
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  margin: 0 0 14px;
+}
+
+.slide-title {
+  font-size: clamp(26px, 4.6vw, 52px);
+  line-height: 1.12;
+  font-weight: 800;
+  margin: 0 0 14px;
+  background: linear-gradient(135deg, var(--fg) 40%, var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.slide-subtitle {
+  font-size: clamp(15px, 2.2vw, 21px);
+  color: var(--fg-muted);
+  margin: 0 0 28px;
+  font-weight: 500;
+}
+
+.slide-body {
+  font-size: clamp(15px, 1.9vw, 19px);
+  line-height: 1.65;
+  color: rgba(244, 246, 251, 0.92);
+}
+
+.slide-body p,
+.slide-body ul,
+.slide-body ol,
+.slide-body blockquote {
+  margin: 0 0 1em;
+}
+
+.slide-body p:last-child,
+.slide-body ul:last-child,
+.slide-body ol:last-child,
+.slide-body blockquote:last-child {
+  margin-bottom: 0;
+}
+
+.slide-body ul,
+.slide-body ol {
+  padding-inline-start: 1.25em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55em;
+}
+
+.slide-body li {
+  padding-inline-start: 0.15em;
+}
+
+.slide-body strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.slide-body em {
+  color: var(--fg-muted);
+}
+
+.slide-body code {
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  padding: 0.15em 0.5em;
+  border-radius: 6px;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+
+.slide-body a {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.slide-body blockquote {
+  border-inline-start: 3px solid var(--accent);
+  padding-inline-start: 1em;
+  font-style: italic;
+  color: var(--fg-muted);
+}
+
+/* ---------- Arrow buttons ---------- */
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--fg);
+  backdrop-filter: blur(6px);
+  transition: background 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+  z-index: 5;
+}
+
+.nav-arrow:hover:not(:disabled) {
+  background: var(--surface-strong);
+}
+
+.nav-arrow:active:not(:disabled) {
+  transform: translateY(-50%) scale(0.92);
+}
+
+.nav-arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.nav-arrow-prev {
+  inset-inline-start: clamp(8px, 2vw, 28px);
+}
+
+.nav-arrow-next {
+  inset-inline-end: clamp(8px, 2vw, 28px);
+}
+
+@media (max-width: 720px) {
+  .nav-arrow {
+    display: none;
+  }
+}
+
+/* ---------- Footer ---------- */
+
+.deck-footer {
+  padding: 0 clamp(14px, 3vw, 32px) clamp(12px, 2.4vh, 22px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-track {
+  height: 3px;
+  width: 100%;
+  background: var(--border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 999px;
+  transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.deck-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--fg-muted);
+}
+
+.deck-footer-credit {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.deck-counter {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.deck-hint {
+  display: none;
+  margin-inline-start: auto;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .deck-hint-keyboard {
+    display: inline;
+  }
+}
+
+@media (pointer: coarse) {
+  .deck-hint-touch {
+    display: inline;
+  }
+}
+
+@media (max-width: 560px) {
+  .deck-hint {
+    display: none !important;
+  }
+  .deck-footer-credit {
+    max-width: 55vw;
+  }
+}
