@@ -5,14 +5,22 @@
 
 ## Diapositives & Script Détaillé
 
-### Diapositive 1 : Titre & Introduction
+### Diapositive d'Introduction
 - **Titre :** IA, Cybersécurité & Expérience Métier
 - **Sous-titre :** Travailler plus vite, protéger sa famille, monétiser son savoir
 - **Intervenant :** Mahfoudh Arous — Skills Center Mobilis Chlef · Programme 7.77
 
 ---
 
-### Diapositive 2 : La Question du Matin
+## BLOC 1 : Intelligence Artificielle (Travailler plus vite)
+
+### Diapositive 1/9 : Titre du Bloc 1
+- **Titre :** Partie 1 : Intelligence Artificielle
+- **Sous-titre :** Comment travailler plus vite et déléguer efficacement à l'IA
+
+---
+
+### Diapositive 2/9 : La Question du Matin
 - **Message clé :** *Quelle tâche administrative vous prend 2 heures chaque semaine et vous épuise ?*
 - **Points abordés :**
   - Rédaction de comptes-rendus interminables
@@ -22,7 +30,7 @@
 
 ---
 
-### Diapositive 3 : Sortir de l'Illusion du Gadget
+### Diapositive 3/9 : Sortir de l'Illusion du Gadget
 - **L'illusion courante :** « L'IA va faire mon travail à ma place. »
 - **La réalité en 3 niveaux (Framework AI Fluency) :**
   1. **Assistance (Faible valeur ajoutée) :** Traduire un texte, résumer des notes brutes, reformuler un email. Utile, mais tout le monde sait le faire.
@@ -31,7 +39,7 @@
 
 ---
 
-### Diapositive 4 : Les 4 Compétences du Professionnel
+### Diapositive 4/9 : Les 4 Compétences du Professionnel
 - **1. Délégation :** Savoir exactement quelle corvée confier à la machine et quelle décision humaine stratégique conserver.
 - **2. Description :** Donner le contexte métier complet, la posture, et le niveau de contrainte juridique ou hiérarchique.
 - **3. Discernement :** Repérer immédiatement l'erreur factuelle, l'invention légale ou l'incohérence contextuelle (goût, intuition, expérience,...).
@@ -39,7 +47,7 @@
 
 ---
 
-### Diapositive 5 : Mauvais Prompt vs Bon Prompt
+### Diapositive 5/9 : Mauvais Prompt vs Bon Prompt
 - **Le mauvais réflexe :**
   > *« Écris-moi une lettre pour relancer un fournisseur en retard. »*
   - **Résultat :** Texte creux, impersonnel, robotique, totalement déconnecté des réalités contractuelles et administratives algériennes.
@@ -47,7 +55,7 @@
 
 ---
 
-### Diapositive 6 : La Méthode RCTFC (Le Standard Pro)
+### Diapositive 6/9 : La Méthode RCTFC (Le Standard Pro)
 - **R — Rôle :** Assistant administratif expérimenté, habitué aux négociations contractuelles du secteur public/privé algérien.
 - **C — Contexte :** Entreprise / Établissement basé à Chlef ; une commande d'équipements a un retard de livraison injustifié de 3 semaines.
 - **T — Tâche :** Rédiger une mise en demeure formelle et ferme, tout en préservant le partenariat commercial futur.
@@ -56,7 +64,15 @@
 
 ---
 
-### Diapositive 7 : Atelier Pratique (30 min — Travail en Binômes)
+### Diapositive 7/9 : Astuces Avancées pour Optimiser l'Utilisation de l'IA
+- **Espaces de travail dédiés :** Au lieu de longues discussions qui diluent le contexte, utilisez les *Projects* (ChatGPT/Claude) ou *Gems* (Gemini) pour structurer vos tâches.
+- **Le bon modèle pour la bonne tâche :** Utilisez des modèles rapides pour les tâches simples (résumés, formatage) et des modèles de raisonnement pour les problèmes complexes.
+- **Capitaliser sur les "Skills" :** Créez et exploitez des *Skills* (instructions personnalisées réutilisables) pour automatiser vos workflows réguliers.
+- **L'approche Agentique :** Pour les projets d'envergure, ne demandez pas tout d'un coup. Décomposez le travail et utilisez des sous-agents spécialisés (ex: recherche, rédaction, révision).
+
+---
+
+### Diapositive 8/9 : Atelier Pratique (30 min — Travail en Binômes)
 - **Consignes :**
   1. Prenez vos smartphones, connectez-vous sur `chatgpt.com` ou `claude.ai`.
   2. Choisissez une corvée administrative réelle vécue cette semaine à Chlef.
@@ -66,14 +82,22 @@
 
 ---
 
-### Diapositive 8 : Le Mur des Hallucinations
+### Diapositive 9/9 : Le Mur des Hallucinations
 - **Le phénomène d'hallucination :** L'IA a horreur du vide. Lorsqu'elle ne dispose pas de la réponse exacte, plutôt que de l'avouer, elle invente parfois des informations de toutes pièces pour satisfaire votre requête.
 - **Le danger invisible :** Elle ne produit généralement pas d'absurdités évidentes. Elle va plutôt générer des éléments faux mais extrêmement crédibles (faux rapports, faux articles de loi, fausses statistiques).
 - **La règle d'or :** L'IA est une "machine à plausibilité", pas à vérité. L'expert métier, c'est vous. Ne validez jamais une source, un chiffre ou une référence légale sans vérification externe.
 
 ---
 
-### Diapositive 9 : Cybersécurité — Le Piège des Liens et QR Codes Malveillants
+## BLOC 2 : Cybersécurité (Protéger sa famille)
+
+### Diapositive 1/7 : Titre du Bloc 2
+- **Titre :** Partie 2 : Cybersécurité
+- **Sous-titre :** Comment protéger sa famille et ses données personnelles
+
+---
+
+### Diapositive 2/7 : Cybersécurité — Le Piège des Liens et QR Codes Malveillants
 - **Le Danger des QR Codes (Quishing) :** Scanner un QR code dans un lieu public ou sur un document non vérifié peut vous rediriger vers un site frauduleux ou télécharger un malware à votre insu.
 - **Les Liens Trompeurs (Phishing) :** Méfiez-vous des liens reçus par SMS (Smishing), email ou sur les réseaux sociaux. Les pirates clonent souvent des sites officiels (banques, services publics) pour voler vos identifiants.
 - **Les bons réflexes :**
@@ -83,7 +107,7 @@
 
 ---
 
-### Diapositive 10 : Le Piège du "Vibe Coding"
+### Diapositive 3/7 : Le Piège du "Vibe Coding"
 - **Qu'est-ce que le Vibe Coding ?** C'est la tendance consistant à développer des applications en générant tout le code via l'IA, souvent sans avoir les compétences techniques pour le comprendre.
 - **Les Dangers Majeurs :**
   - **Identifiants en clair :** L'IA peut générer du code contenant vos mots de passe ou clés d'API "en dur", les rendant accessibles à tous si le code est publié.
@@ -95,24 +119,23 @@
 
 ---
 
-### Diapositive 11 : Risques Familiaux — BaridiMob & Clonage Vocal
+### Diapositive 4/7 : Risques Familiaux — BaridiMob & Clonage Vocal
 - **Fraude BaridiMob :**
   - **Règle absolue :** Le code SMS / OTP est strictement personnel et secret. **Aucun** agent d'Algérie Poste ou de banque ne vous demandera un OTP au téléphone.
   - **Le vol silencieux d'OTP :** Méfiez-vous des applications mobiles malveillantes (surtout hors stores officiels). Si une application obtient l'autorisation de **lire vos SMS**, elle peut intercepter vos codes BaridiMob en arrière-plan et les envoyer aux pirates.
-
   - **Arnaque type :** L'escroc vous contacte via un **faux profil** (Facebook, WhatsApp) au nom d'un de vos proches. Il prétexte une urgence et vous demande un transfert BaridiMob immédiat.
   - **L'antidote immédiat :** Ne vous fiez ni à la photo de profil, ni au nom affiché. Appelez toujours la personne directement sur son véritable numéro de téléphone pour vérifier l'information de vive voix.
 
 ---
 
-### Diapositive 12 : Vos Enfants et l'IA
+### Diapositive 5/7 : Vos Enfants et l'IA
 - **Constat terrain :** Vos collégiens et lycéens utilisent déjà ChatGPT, Perplexity ou des filtres IA, souvent plus vite que vous. L'interdiction stricte ne fonctionne jamais.
 - **Le véritable risque :** Ce n'est pas l'outil, c'est ce qu'on y dépose (photos personnelles, nom de famille, établissement scolaire, localisation).
 - **Prévention :** Les photos et audios peuvent être détournés (deepfakes, chantage scolaire). Les enfants doivent savoir qu'ils peuvent vous en parler sans crainte d'être punis ou privés d'écran.
 
 ---
 
-### Diapositive 13 : Les Données Taboues — Ce qu'on ne donne JAMAIS à l'IA
+### Diapositive 6/7 : Les Données Taboues — Ce qu'on ne donne JAMAIS à l'IA
 - **Ne collez JAMAIS dans un outil cloud public :**
   - Documents internes confidentiels et bilans d'entreprise non publics
   - Pièces d'identité, numéros de passeport, permis
@@ -123,7 +146,7 @@
 
 ---
 
-### Diapositive 14 : Action Immédiate — Sécuriser sa Boîte Mail
+### Diapositive 7/7 : Action Immédiate — Sécuriser sa Boîte Mail
 - **Pourquoi la boîte mail ?** C'est la clé de voûte de toute votre existence numérique. Qui contrôle votre boîte mail peut réinitialiser vos banques, réseaux sociaux et démarches administratives.
 - **Procédure en direct (2 minutes) :**
   1. Vérifier si vos identifiants ont déjà fuité sur `haveibeenpwned.com`.
@@ -132,7 +155,15 @@
 
 ---
 
-### Diapositive 15 : Valoriser son Expertise et sa Visibilité
+## BLOC 3 : Expérience Métier (Monétiser son savoir)
+
+### Diapositive 1/4 : Titre du Bloc 3
+- **Titre :** Partie 3 : Expérience Métier
+- **Sous-titre :** Comment valoriser et monétiser son savoir
+
+---
+
+### Diapositive 2/4 : Valoriser son Expertise et sa Visibilité
 - **Développer sa visibilité en ligne :** Ne restez pas dans l'ombre. Prenez la parole sur les réseaux professionnels pour partager votre expérience et vos idées.
 - **Construire un portfolio solide :** Rassemblez et documentez vos réalisations, projets et expérimentations pour prouver concrètement votre savoir-faire.
 - **Créer et expérimenter :** L'apprentissage passe par la pratique. Lancez des projets, testez de nouvelles idées et partagez ouvertement vos apprentissages.
@@ -140,7 +171,7 @@
 
 ---
 
-### Diapositive 16 : Rester à Jour Sans Y Passer ses Soirées
+### Diapositive 3/4 : Rester à Jour Sans Y Passer ses Soirées
 - **Le piège :** La surcharge informationnelle. De nouveaux modèles et outils sortent chaque semaine.
 - **La méthode minimaliste et durable :**
   - Pas 10 newsletters : **une seule** lecture ciblée (ex : [*TLDR AI*](https://tldr.tech/ai) en 5 minutes ou [*Superhuman AI*](https://www.joinsuperhuman.ai/)).
@@ -150,15 +181,19 @@
 
 ---
 
-### Diapositive 17 : Votre Engagement Dès Aujourd'hui
+### Diapositive 4/4 : Votre Engagement Dès Aujourd'hui
 1. **Une tâche administrative automatisée** dès lundi avec la structure RCTFC.
 2. **Un modèle de prompt sauvegardé** dans vos notes personnelles.
 3. **2FA activée** sur votre compte principal et mot de passe de secours familial fixé à la maison.
 
 ---
 
-### Diapositive 18 : Ressources & Contact
+## Clôture
+
+### Diapositive de Clôture : Ressources & Contact
 - **Site web :** `mahfoudh.dev`
 - **YouTube :** `@mahfoudh_arous` (Français) · `ورشة البرمجة مع محفوظ` (Arabe)
 - **Programme National 7.77 :** Renseignements complémentaires auprès des encadrants du Skills Center Mobilis Chlef.
 - **Échanges & Questions-Réponses :** Tour de table ouvert.
+
+*Un grand merci à toutes et à tous pour votre présence, votre écoute et vos échanges enrichissants. N'hésitez pas à me contacter si vous avez d'autres questions !*
