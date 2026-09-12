@@ -28,6 +28,11 @@ export const en: Dictionary = {
       body: "**Speaker:** Mahfoudh Arous — Skills Center Mobilis Chlef · 7.77 Program",
     },
     {
+      title: "Part 1: Artificial Intelligence",
+      subtitle: "How to work faster and delegate effectively to AI",
+      body: "",
+    },
+    {
       title: "This Morning's Question",
       body: `*Which administrative task takes you 2 hours every week and wears you out?*
 
@@ -71,6 +76,13 @@ export const en: Dictionary = {
 - **C — Constraints:** Do not immediately threaten late-payment penalties, but demand a firm commitment schedule within 48 hours.`,
     },
     {
+      title: "Advanced Tips to Get the Most Out of AI",
+      body: `- **Dedicated workspaces** — Instead of long conversations that dilute context, use *Projects* (ChatGPT/Claude) or *Gems* (Gemini) to structure your tasks.
+- **The right model for the right task** — Use fast models for simple tasks (summaries, formatting) and reasoning models for complex problems.
+- **Capitalize on "Skills"** — Create and use *Skills* (reusable custom instructions) to automate your recurring workflows.
+- **The agentic approach** — For large projects, don't ask for everything at once. Break the work down and use specialized sub-agents (e.g. research, drafting, review).`,
+    },
+    {
       title: "Hands-on Workshop",
       subtitle: "30 min — Pair work",
       body: `1. Take out your smartphones and log in to \`chatgpt.com\` or \`claude.ai\`.
@@ -86,6 +98,11 @@ export const en: Dictionary = {
 **The invisible danger:** it usually doesn't produce obvious nonsense. Instead it generates false but extremely credible content (fake reports, fake legal articles, fake statistics).
 
 **The golden rule:** AI is a "plausibility machine", not a truth machine. You are the domain expert. Never validate a source, figure, or legal reference without external verification.`,
+    },
+    {
+      title: "Part 2: Cybersecurity",
+      subtitle: "How to protect your family and personal data",
+      body: "",
     },
     {
       title: "Cybersecurity — The Trap of Malicious Links and QR Codes",
@@ -149,6 +166,11 @@ export const en: Dictionary = {
 1. Check whether your credentials have already leaked on [haveibeenpwned.com](https://haveibeenpwned.com).
 2. Open your Google / Microsoft account settings on your smartphone.
 3. Turn on two-step verification (**2FA**).`,
+    },
+    {
+      title: "Part 3: Professional Experience",
+      subtitle: "How to showcase and monetize your expertise",
+      body: "",
     },
     {
       title: "Showcase Your Expertise and Visibility",

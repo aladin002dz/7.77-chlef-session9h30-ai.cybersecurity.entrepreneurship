@@ -28,6 +28,11 @@ export const fr: Dictionary = {
       body: "**Intervenant :** Mahfoudh Arous — Skills Center Mobilis Chlef · Programme 7.77",
     },
     {
+      title: "Partie 1 : Intelligence Artificielle",
+      subtitle: "Comment travailler plus vite et déléguer efficacement à l'IA",
+      body: "",
+    },
+    {
       title: "La Question du Matin",
       body: `*Quelle tâche administrative vous prend 2 heures chaque semaine et vous épuise ?*
 
@@ -71,6 +76,13 @@ export const fr: Dictionary = {
 - **C — Contraintes :** Ne pas menacer immédiatement de pénalités de retard, mais exiger un calendrier d'engagement ferme sous 48h.`,
     },
     {
+      title: "Astuces Avancées pour Optimiser l'Utilisation de l'IA",
+      body: `- **Espaces de travail dédiés** — Au lieu de longues discussions qui diluent le contexte, utilisez les *Projects* (ChatGPT/Claude) ou *Gems* (Gemini) pour structurer vos tâches.
+- **Le bon modèle pour la bonne tâche** — Utilisez des modèles rapides pour les tâches simples (résumés, formatage) et des modèles de raisonnement pour les problèmes complexes.
+- **Capitaliser sur les « Skills »** — Créez et exploitez des *Skills* (instructions personnalisées réutilisables) pour automatiser vos workflows réguliers.
+- **L'approche agentique** — Pour les projets d'envergure, ne demandez pas tout d'un coup. Décomposez le travail et utilisez des sous-agents spécialisés (ex : recherche, rédaction, révision).`,
+    },
+    {
       title: "Atelier Pratique",
       subtitle: "30 min — Travail en binômes",
       body: `1. Prenez vos smartphones, connectez-vous sur \`chatgpt.com\` ou \`claude.ai\`.
@@ -86,6 +98,11 @@ export const fr: Dictionary = {
 **Le danger invisible :** Elle ne produit généralement pas d'absurdités évidentes. Elle va plutôt générer des éléments faux mais extrêmement crédibles (faux rapports, faux articles de loi, fausses statistiques).
 
 **La règle d'or :** L'IA est une « machine à plausibilité », pas à vérité. L'expert métier, c'est vous. Ne validez jamais une source, un chiffre ou une référence légale sans vérification externe.`,
+    },
+    {
+      title: "Partie 2 : Cybersécurité",
+      subtitle: "Comment protéger sa famille et ses données personnelles",
+      body: "",
     },
     {
       title: "Cybersécurité — Le Piège des Liens et QR Codes Malveillants",
@@ -149,6 +166,11 @@ export const fr: Dictionary = {
 1. Vérifier si vos identifiants ont déjà fuité sur [haveibeenpwned.com](https://haveibeenpwned.com).
 2. Ouvrir les paramètres du compte Google / Microsoft sur votre smartphone.
 3. Activer la validation en deux étapes (**2FA**).`,
+    },
+    {
+      title: "Partie 3 : Expérience Métier",
+      subtitle: "Comment valoriser et monétiser son savoir",
+      body: "",
     },
     {
       title: "Valoriser son Expertise et sa Visibilité",
