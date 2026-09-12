@@ -374,9 +374,18 @@ button {
   inset-inline-end: clamp(8px, 2vw, 28px);
 }
 
+/* On narrow / touch screens the buttons stay (as the only visual cue for
+   which way to swipe) but shrink and fade so they read as a hint rather
+   than a primary control competing with the slide content. */
 @media (max-width: 720px) {
   .nav-arrow {
-    display: none;
+    width: 34px;
+    height: 34px;
+    opacity: 0.65;
+  }
+
+  .nav-arrow:disabled {
+    opacity: 0.15;
   }
 }
 

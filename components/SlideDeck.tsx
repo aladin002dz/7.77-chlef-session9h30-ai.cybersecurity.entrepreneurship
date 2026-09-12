@@ -126,6 +126,23 @@ export default function SlideDeck({
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [goNext, goPrev, goTo, total]);
 
+  // Slide position is driven entirely by the track's CSS transform, so the
+  // viewport itself should never actually scroll. On some mobile browsers,
+  // focusing a nav-arrow button (e.g. right after a tap) triggers a native
+  // scrollIntoView on this overflow:hidden container anyway — because the
+  // very wide off-screen track inflates its scrollable area — which shifts
+  // the visible slide and the absolutely-positioned arrows out of place.
+  // Snap any such stray scroll straight back to 0.
+  useEffect(() => {
+    const el = viewportRef.current;
+    if (!el) return;
+    function onScroll() {
+      if (el.scrollLeft !== 0) el.scrollLeft = 0;
+    }
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, []);
+
   // Touch drag-to-swipe with live finger tracking.
   useEffect(() => {
     const el = viewportRef.current;
