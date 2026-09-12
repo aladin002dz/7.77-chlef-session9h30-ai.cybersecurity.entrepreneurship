@@ -5,6 +5,7 @@ import type { Dictionary } from "@/lib/types";
 import type { Locale } from "@/lib/site";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Markdown from "./Markdown";
+import QRCode from "./QRCode";
 
 const SWIPE_THRESHOLD = 56;
 const WHEEL_COOLDOWN_MS = 650;
@@ -282,6 +283,7 @@ export default function SlideDeck({
                 <div className="slide-body">
                   <Markdown text={slide.body} />
                 </div>
+                {i === 0 ? <QRCode label={dict.ui.qrLabel} /> : null}
               </div>
             </section>
           ))}

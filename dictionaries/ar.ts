@@ -19,6 +19,7 @@ export const ar: Dictionary = {
     langLabel: "اللغة",
     footer: "برنامج 7.77 · مركز المهارات موبيليس الشلف",
     startLabel: "الشريحة",
+    qrLabel: "امسح لفتح العرض التقديمي",
   },
   slides: [
     {

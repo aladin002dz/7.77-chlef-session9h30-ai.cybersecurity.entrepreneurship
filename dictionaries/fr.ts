@@ -19,6 +19,7 @@ export const fr: Dictionary = {
     langLabel: "Langue",
     footer: "Programme 7.77 · Skills Center Mobilis Chlef",
     startLabel: "Diapositive",
+    qrLabel: "Scannez pour ouvrir la présentation",
   },
   slides: [
     {

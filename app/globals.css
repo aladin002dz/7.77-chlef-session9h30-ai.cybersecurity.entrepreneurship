@@ -298,6 +298,41 @@ button {
   color: var(--fg-muted);
 }
 
+/* ---------- QR code (opening slide) ---------- */
+
+.qr-card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: clamp(24px, 5vh, 40px);
+  padding: 14px;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.qr-card:hover {
+  background: var(--surface-strong);
+  transform: translateY(-2px);
+}
+
+.qr-code {
+  width: clamp(96px, 16vw, 132px);
+  height: clamp(96px, 16vw, 132px);
+  border-radius: 8px;
+  display: block;
+}
+
+.qr-caption {
+  font-size: clamp(11px, 1.4vw, 13px);
+  color: var(--fg-muted);
+  text-decoration: none;
+  text-align: center;
+  max-width: 180px;
+}
+
 /* ---------- Arrow buttons ---------- */
 
 .nav-arrow {

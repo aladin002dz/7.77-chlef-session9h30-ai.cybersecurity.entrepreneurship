@@ -19,6 +19,7 @@ export const en: Dictionary = {
     langLabel: "Language",
     footer: "7.77 Program · Skills Center Mobilis Chlef",
     startLabel: "Slide",
+    qrLabel: "Scan to open the presentation",
   },
   slides: [
     {

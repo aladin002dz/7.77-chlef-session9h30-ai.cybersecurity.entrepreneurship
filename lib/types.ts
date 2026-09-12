@@ -27,6 +27,7 @@ export interface Dictionary {
     langLabel: string;
     footer: string;
     startLabel: string;
+    qrLabel: string;
   };
   slides: Slide[];
 }
