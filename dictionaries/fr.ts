@@ -200,7 +200,7 @@ export const fr: Dictionary = {
       title: "Ressources & Contact",
       body: `- **Site web :** [mahfoudh.dev](https://mahfoudh.dev)
 - **YouTube :** \`@mahfoudh_arous\` (Français) · ورشة البرمجة مع محفوظ (Arabe)
-- **Programme National 7.77 :** renseignements complémentaires auprès des encadrants du Skills Center Mobilis Chlef.
+- **Programme National 7.77 :** [777.mpt.gov.dz](https://777.mpt.gov.dz/) — renseignements complémentaires auprès des encadrants du Skills Center Mobilis Chlef.
 - **Échanges & Questions-Réponses :** tour de table ouvert.`,
     },
   ],

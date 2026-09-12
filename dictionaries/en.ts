@@ -200,7 +200,7 @@ export const en: Dictionary = {
       title: "Resources & Contact",
       body: `- **Website:** [mahfoudh.dev](https://mahfoudh.dev)
 - **YouTube:** \`@mahfoudh_arous\` (French) · ورشة البرمجة مع محفوظ (Arabic)
-- **7.77 National Program:** further information from the Skills Center Mobilis Chlef facilitators.
+- **7.77 National Program:** [777.mpt.gov.dz](https://777.mpt.gov.dz/) — further information from the Skills Center Mobilis Chlef facilitators.
 - **Discussion & Q&A:** open floor.`,
     },
   ],

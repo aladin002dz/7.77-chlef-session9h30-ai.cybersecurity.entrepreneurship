@@ -193,7 +193,7 @@
 ### Diapositive de Clôture : Ressources & Contact
 - **Site web :** `mahfoudh.dev`
 - **YouTube :** `@mahfoudh_arous` (Français) · `ورشة البرمجة مع محفوظ` (Arabe)
-- **Programme National 7.77 :** Renseignements complémentaires auprès des encadrants du Skills Center Mobilis Chlef.
+- **Programme National 7.77 :** [777.mpt.gov.dz](https://777.mpt.gov.dz/) — renseignements complémentaires auprès des encadrants du Skills Center Mobilis Chlef.
 - **Échanges & Questions-Réponses :** Tour de table ouvert.
 
 *Un grand merci à toutes et à tous pour votre présence, votre écoute et vos échanges enrichissants. N'hésitez pas à me contacter si vous avez d'autres questions !*
