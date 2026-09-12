@@ -1,5 +1,7 @@
 # 7.77 Chlef — Session 09:30 · IA, Cybersécurité & Expérience Métier
 
+**🔗 Aperçu en ligne : [mahfoudh.dev/7.77-chlef-session9h30-ai.cybersecurity.entrepreneurship](https://mahfoudh.dev/7.77-chlef-session9h30-ai.cybersecurity.entrepreneurship)**
+
 Diaporama web trilingue (FR / EN / AR), construit à partir de
 [`SESSION_09h30_31-45_ANS.md`](./SESSION_09h30_31-45_ANS.md), navigable :
 
